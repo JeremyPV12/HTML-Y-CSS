@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Tomy - Inicio de Sesión</title>
+    <link rel="stylesheet" href="./styles/tailwind.css">
+</head>
+<body class="">
+    <div class="">
+        <main class="">
+            <div class="grid grid-cols-2 mx-32 gap-10">
+                <a class="col-span-2 mx-auto flex my-4" href="index.html">
+                    <div class="col-span-2 mx-auto flex my-4">
+                        <img src="./assets/image/logo-company.jpg" alt="" class="h-16 w-16">
+                        <h1 class="text-2xl text-color-main font-bold py-2">Veterinaria<span class="text-color-secundary">Tomy</span></h1>
+                    </div>
+                </a>
+                <div class="col-span-1 border rounded-lg">
+                    <h1 class="text-color-main font-extrabold text-2xl my-3 text-center">Registrarse</h1>
+                    <form action="/registro" method="POST" class="col-span-1 grid grid-cols-1 ml-32 my-10 gap-y-4">
+                        <div class="flex-col col-span-1">
+                            <label for="nombre_usuario" class="text-color-terciario font-bold text-xl">
+                                Nombre de usuario
+                            </label>
+                        </div>
+                        <div class="col-span-1">
+                            <input type="text" id="nombre_usuario" name="nombre_usuario" class="border-b w-full" required>
+                        </div>
+                        <div class="flex-col col-span-1 ">
+                            <label for="correo_registro" class="text-color-terciario font-bold text-xl">
+                                Correo electrónico
+                            </label>
+                        </div>
+                        <div class="col-span-1">
+                            <input type="email" id="correo_registro" name="correo_registro" class="border-b w-full" required>
+                        </div>
+                        <div class="flex-col col-span-1 ">
+                            <label for="contrasena_registro" class="text-color-terciario font-bold text-xl">
+                                Contraseña
+                            </label>
+                        </div>
+                        <div class="col-span-1">
+                            <input type="password" id="contrasena_registro" name="contrasena_registro" class="border-b w-full" required>
+                        </div>
+                        <div class="bg-color-main rounded-xl w-44 h-10 mx-auto mb-10 hover:bg-color-terciario">
+                            <button type="submit" class="text-color-fondo font-medium text-xl mt-1"><span class="ml-10">Registrarse</span></button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="border rounded-xl grid grid-cols-1 w-full">
+                    <h1 class="text-color-main font-extrabold text-2xl my-3 text-center">Iniciar Sesión</h1>
+                    <form action="/inicio_sesion" method="POST" class="col-span-1 grid grid-cols-1 ml-32 my-10 gap-y-4">
+                        <div class="flex-col col-span-1 ">
+                            <label for="correo_login" class="text-color-terciario font-bold text-xl">
+                                Correo electrónico
+                            </label>
+                        </div>
+                        <div class="col-span-1">
+                            <input type="email" id="correo_login" name="correo_login" class="border-b w-full" required>
+                        </div>
+                        <div class="flex-col col-span-1 ">
+                            <label for="contrasena_login" class="text-color-terciario font-bold text-xl">
+                                Contraseña
+                            </label>
+                        </div>
+                        <div class="col-span-1">
+                            <input type="password" id="contrasena_login" name="contrasena_login" class="border-b w-full" required>
+                        </div>
+                        <div class="flex justify-around my-8">
+                            <div class="flex">
+                                <input type="checkbox" >
+                                <h4 class="text-color-letter font-semibold text-lg mx-2">Recuérdame</h4>
+                            </div>
+                            <div>
+                                <h1  class="text-color-letter font-semibold text-lg">Olvidé la contraseña</h1>
+                            </div>
+                        </div>
+                        <div class="bg-color-main rounded-xl w-32 mx-auto h-10 mb-10 hover:bg-color-terciario">
+                            <button type="submit" class="text-color-fondo font-medium text-xl mt-1">
+                                <span class="ml-10">Iniciar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-span-2">
+                    <div class="border-b border-color-secundary">
+                    </div>
+                    <div class="my-4">
+                        <p class="text-color-letter font-normal text-base">Sus datos personales se utilizarán para respaldar su experiencia en este sitio web, para administrar el acceso a su cuenta y para otros fines descritos en nuestra política de privacidad.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
